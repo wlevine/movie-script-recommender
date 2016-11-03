@@ -1,0 +1,28 @@
+#Use an Ubuntu Server image on c4.8xlarge (36 cores, about $1.50/hour)
+#The username is ubuntu
+
+#First clone this repository
+git clone https://github.com/wlevine/signal.git
+
+#Clone dotfiles and symlink .vimrc
+git clone https://github.com/wlevine/dotfiles.git
+ln -s dotfiles/vimrc .vimrc
+ln -s dotfiles/gitconfig .gitconfig
+ln -s dotfiles/gitignore_global .gitignore_global
+
+#Install stuff
+sudo apt-get install virtualenv
+
+#Set up python3 virtualenv
+virtualenv -p python3 venv
+source venv/bin/activate
+pip3 install jupyter ipython cython numpy scipy pandas scikit-learn
+
+#Set up jupyter server
+jupyter notebook --generate-config
+#Edit ~/.jupyter/jupyter_notebook_config.py to contain the following to allow connections from any IP address:
+c.NotebookApp.ip = '*'
+c.NotebookApp.open_browser = False
+c.NotebookApp.port = 9999 
+#Use amazon to open up port 9999 to the current IP address only (This is very insecure!!)
+#Run 'jupyter notebook' in the desired directory (probably inside screen)
