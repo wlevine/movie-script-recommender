@@ -16,7 +16,7 @@ sudo apt-get install virtualenv
 #Set up python3 virtualenv
 virtualenv -p python3 venv
 source venv/bin/activate
-pip3 install jupyter ipython cython numpy scipy pandas scikit-learn
+pip3 install jupyter ipython cython numpy scipy pandas scikit-learn nltk
 
 #Set up jupyter server
 jupyter notebook --generate-config
