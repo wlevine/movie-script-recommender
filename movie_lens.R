@@ -199,3 +199,21 @@ movies_joined = cbind(movies_joined, genomes_for_joined_movies)
 
 #write out joined movies with factors
 write.csv(movies_joined,file="joined_movies_w_factors_and_genomes.csv",row.names=FALSE)
+
+#The first time around I forgot to write out the movie centers and scales which are super important.
+#So do that here.
+#Before doing this, we must rerun up to ?
+
+#we need the final_fit object to get the scalings
+load(file="saved_objects/softimpute_fit_final_best.save")
+
+to_fix_up = read.csv("joined_movies_w_factors_and_genomes.csv",stringsAsFactors = FALSE)
+
+#movie_levels converts indices to movieId. We want the opposite conversion.
+indices = sapply(to_fix_up$movieId, function (x) {
+  a = which(x == movie_levels)
+  ifelse(length(a)==1,a,NA)
+  })
+
+to_fix_up$center = attr(final_fit,"biScale:column")$center[indices]
+to_fix_up$scale = attr(final_fit,"biScale:column")$scale[indices]
