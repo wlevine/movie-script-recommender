@@ -202,7 +202,7 @@ write.csv(movies_joined,file="joined_movies_w_factors_and_genomes.csv",row.names
 
 #The first time around I forgot to write out the movie centers and scales which are super important.
 #So do that here.
-#Before doing this, we must rerun up to ?
+#Before doing this, we must rerun up to the part where we get movie_levels
 
 #we need the final_fit object to get the scalings
 load(file="saved_objects/softimpute_fit_final_best.save")
@@ -217,3 +217,5 @@ indices = sapply(to_fix_up$movieId, function (x) {
 
 to_fix_up$center = attr(final_fit,"biScale:column")$center[indices]
 to_fix_up$scale = attr(final_fit,"biScale:column")$scale[indices]
+
+write.csv(to_fix_up,file="joined_movies_w_factors_and_genomes.csv", row.names=FALSE)
