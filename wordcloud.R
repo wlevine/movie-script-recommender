@@ -1,0 +1,298 @@
+library('wordcloud')
+library('RColorBrewer')
+
+setwd('~/signal/project')
+
+action_words = c('weapon',
+                 'explodes',
+                 'aim',
+                 'crash',
+                 'fire',
+                 'bullet',
+                 'wall',
+                 'gun',
+                 'drop',
+                 'chopper',
+                 'oh',
+                 'steel',
+                 'rooftop',
+                 'trigger',
+                 'air',
+                 'fly',
+                 'punch',
+                 'slam',
+                 'building',
+                 'blast',
+                 'slide',
+                 'dive',
+                 'helicopter',
+                 'control',
+                 'scan')
+action_weights = c(0.076, 
+                   0.046, 
+                   0.046, 
+                   0.036, 
+                   0.030, 
+                   0.030, 
+                   0.030, 
+                   0.027, 
+                   0.026, 
+                   0.026, 
+                   0.024, 
+                   0.024, 
+                   0.024, 
+                   0.024, 
+                   0.023, 
+                   0.023, 
+                   0.023, 
+                   0.022, 
+                   0.021, 
+                   0.021, 
+                   0.021, 
+                   0.020, 
+                   0.019, 
+                   0.019, 
+                   0.018)
+
+pal2 = brewer.pal(8,"Dark2")
+png("images/wordcloud_action.png",width=400,height=400)
+wordcloud(action_words,action_weights,colors=pal2)
+dev.off()
+
+comedy_words = c("guy",
+                 "really",
+                 "hey",
+                 "just",
+                 "ball",
+                 "married",
+                 "asshole",
+                 "piss",
+                 "dude",
+                 "wow",
+                 "ups",
+                 "jay",
+                 "awesome",
+                 "chick",
+                 "ooh",
+                 "cheat",
+                 "puke",
+                 "mime",
+                 "dana",
+                 "psychotic"
+)
+
+comedy_weights = c(
+  0.116,
+  0.077,
+  0.074,
+  0.072,
+  0.065,
+  0.061,
+  0.056,
+  0.052,
+  0.051,
+  0.048,
+  0.045,
+  0.043,
+  0.038,
+  0.036,
+  0.033,
+  0.031,
+  0.029,
+  0.027,
+  0.023,
+  0.022
+)
+
+pal2 = brewer.pal(8,"Dark2")
+png("images/wordcloud_comedy.png",width=400,height=400)
+wordcloud(comedy_words,comedy_weights,colors=pal2)
+dev.off()
+
+factor1_pos_words = c(
+  'talkin',
+  'anybody',
+  'cigarette',
+  'heard',
+  'actor',
+  'drink',
+  'sit',
+  'people',
+  'film',
+  'yeah',
+  'voice',
+  'don',
+  'shot'
+)
+factor1_neg_words = c(
+  'rush',
+  'telephone',
+  'monitor',
+  'know',
+  'data',
+  'eye',
+  'air',
+  'race',
+  'catch',
+  'beat',
+  'drop',
+  'cell',
+  'pilot',
+  'grab',
+  'leap',
+  'dive',
+  'tumble',
+  'breath',
+  'rip',
+  'tech',
+  'team',
+  'video',
+  'computer',
+  'fly',
+  'launch',
+  'save',
+  'hears',
+  'spark',
+  'whirl',
+  'stun',
+  'system',
+  'wham',
+  'chute',
+  'realize',
+  'laptop',
+  'perfect',
+  'fireball'
+)
+factor1_pos_weights = c(
+  0.00049941776058523384,
+  0.00023369200675495399,
+  0.00017326107800195019,
+  0.00014552169346077515,
+  0.00014063436092495967,
+  0.000132289254922266,
+  6.8177650411176707e-05,
+  4.901241018706896e-05,
+  3.9650797512843262e-05,
+  3.0500491697645371e-05,
+  1.3952571159930322e-05,
+  1.1400841228266626e-05,
+  4.8403445469470943e-06
+)
+factor1_neg_weights = c(
+  5.2477076828189414e-07, 
+  2.4199103840131539e-06, 
+  4.3746852922391439e-06, 
+  4.7065997756649299e-06, 
+  1.3741748686698268e-05, 
+  1.5390077649593586e-05, 
+  2.210105908904655e-05, 
+  2.4963317757960597e-05, 
+  2.6498894121412041e-05, 
+  3.8415830373639563e-05, 
+  4.9557849293988835e-05, 
+  6.1547752890865048e-05, 
+  6.8315450340073228e-05, 
+  6.9319411892041245e-05, 
+  6.9691463100047575e-05, 
+  7.1194759732302673e-05, 
+  7.3387405546546412e-05, 
+  7.9292930229728559e-05, 
+  7.9554236775907655e-05, 
+  8.086076076897151e-05, 
+  8.3656189451853768e-05, 
+  8.4836321142913652e-05, 
+  0.0001176391203037616, 
+  0.0001194948753814878, 
+  0.00018509962592946043, 
+  0.0001919815705980868, 
+  0.00020477116614011571, 
+  0.00020489533999584544, 
+  0.00021541896805040448, 
+  0.00022648888264348188, 
+  0.0002393984665033794, 
+  0.00032399389166426869, 
+  0.00034764058460298871, 
+  0.00037926498798270209, 
+  0.00039806332550483992, 
+  0.00047072969810565713, 
+  0.0010288025497466071
+)
+
+reds = c("#FF8888","#FF4444","#FF0000")
+blues = c("#8888FF","#4444FF","#0000FF")
+png("images/wordcloud_factor1_pos.png",width=400,height=400)
+wordcloud(factor1_pos_words,factor1_pos_weights,colors=blues)
+dev.off()
+png("images/wordcloud_factor1_neg.png",width=400,height=400)
+wordcloud(factor1_neg_words,factor1_neg_weights,colors=reds)
+dev.off()
+
+factor2_pos_words = c(
+  'spell',
+  'marry',
+  'philadelphia',
+  'tail',
+  'thank',
+  'potter',
+  'word',
+  'wait',
+  'nod',
+  'come',
+  'ask',
+  'oh',
+  'hey'
+)
+factor2_neg_words = c(
+  'gun',
+  'fucker',
+  'fuckin',
+  'blood',
+  'body',
+  'fuck',
+  'lime',
+  'scream',
+  'frame',
+  'motherfucker',
+  'denny',
+  'flesh',
+  'pussy',
+  'yuppie'
+)
+factor2_pos_weights = c(
+  0.00096135956133532811,
+  0.00074032471136620118,
+  0.00031034575519908888,
+  0.00020167067958881351,
+  0.00013952040909696132,
+  0.00013335462886857445,
+  0.00011382600527726387,
+  4.309378828938053e-05,
+  2.055169436982447e-05,
+  1.1165858541793294e-05,
+  1.0466835403040762e-05,
+  2.8686617577435966e-07,
+  1.646471691640384e-07
+)
+factor2_neg_weights = c(
+  1.3426769121932355e-05,
+  2.5624810879245302e-05,
+  3.6544302144186008e-05,
+  5.1755864293955783e-05,
+  6.263413035288846e-05,
+  0.00010149164624789543,
+  0.00013607722801156342,
+  0.0001363062747765564,
+  0.00015894790540263342,
+  0.00024998930142487957,
+  0.00027907419343772182,
+  0.0003170184607205796,
+  0.00060992470408107781,
+  0.00088256272736631078
+)
+
+png("images/wordcloud_factor2_pos.png",width=400,height=400)
+wordcloud(factor2_pos_words,factor2_pos_weights,colors=blues)
+dev.off()
+png("images/wordcloud_factor2_neg.png",width=400,height=400)
+wordcloud(factor2_neg_words,factor2_neg_weights,colors=reds)
+dev.off()
