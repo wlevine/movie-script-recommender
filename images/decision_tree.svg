@@ -9,13 +9,16 @@
    xmlns="http://www.w3.org/2000/svg"
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
-   width="746.4425mm"
-   height="324.72189mm"
-   viewBox="0 0 2644.875 1150.5893"
+   width="726.4425mm"
+   height="304.72189mm"
+   viewBox="0 0 2574.0089 1079.7232"
    id="svg2"
    version="1.1"
    inkscape:version="0.91 r13725"
-   sodipodi:docname="decision_tree.svg">
+   sodipodi:docname="decision_tree.svg"
+   inkscape:export-filename="/home/will/signal/project/decision_tree.svg.png"
+   inkscape:export-xdpi="90"
+   inkscape:export-ydpi="90">
   <defs
      id="defs4" />
   <sodipodi:namedview
@@ -26,8 +29,8 @@
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
      inkscape:zoom="0.25"
-     inkscape:cx="1219.0136"
-     inkscape:cy="633.6228"
+     inkscape:cx="1125.5805"
+     inkscape:cy="598.1897"
      inkscape:document-units="px"
      inkscape:current-layer="layer1"
      showgrid="true"
@@ -36,15 +39,15 @@
      inkscape:window-x="49"
      inkscape:window-y="24"
      inkscape:window-maximized="1"
-     fit-margin-top="20"
-     fit-margin-left="20"
-     fit-margin-right="20"
-     fit-margin-bottom="20">
+     fit-margin-top="10"
+     fit-margin-left="10"
+     fit-margin-right="10"
+     fit-margin-bottom="10">
     <inkscape:grid
        type="xygrid"
        id="grid4216"
-       originx="1799.5806"
-       originy="36.723284" />
+       originx="1764.1476"
+       originy="1.2901874" />
   </sodipodi:namedview>
   <metadata
      id="metadata7">
@@ -62,7 +65,7 @@
      inkscape:label="Layer 1"
      inkscape:groupmode="layer"
      id="layer1"
-     transform="translate(1799.5805,61.503855)">
+     transform="translate(1764.1474,26.070784)">
     <text
        xml:space="preserve"
        style="font-style:normal;font-weight:normal;font-size:60px;line-height:125%;font-family:sans-serif;text-align:center;letter-spacing:0px;word-spacing:0px;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
@@ -189,43 +192,43 @@
        id="g3">
       <polygon
          style="fill:#fff466;stroke:#000000;stroke-width:4.375;stroke-miterlimit:7"
-         points="98.286,32.141 78.997,46.953 76.435,10.906 60.356,48.289 44.052,30.703 44.239,56.352 9.122,43.383 34.458,67.625 18.771,76.062 37.552,82.461 10.606,98.633 44.231,96.242 45.177,121 59.88,98.805 71.356,111.414 75.896,100.906 94.771,114.234 92.083,99.344 127.083,116.406 102.09,91.312 125.551,77.836 100.442,73.93 123.771,52.727 89.176,58.445 "
+         points="60.356,48.289 44.052,30.703 44.239,56.352 9.122,43.383 34.458,67.625 18.771,76.062 37.552,82.461 10.606,98.633 44.231,96.242 45.177,121 59.88,98.805 71.356,111.414 75.896,100.906 94.771,114.234 92.083,99.344 127.083,116.406 102.09,91.312 125.551,77.836 100.442,73.93 123.771,52.727 89.176,58.445 98.286,32.141 78.997,46.953 76.435,10.906 "
          id="polygon5" />
       <polygon
-         points="79.192,45.531 83.114,42.922 79.474,0 77.504,5.422 "
+         points="77.504,5.422 79.192,45.531 83.114,42.922 79.474,0 "
          id="polygon7" />
       <polygon
-         points="101.786,73.914 106.301,75.297 131.215,50.367 127.715,50.609 "
+         points="127.715,50.609 101.786,73.914 106.301,75.297 131.215,50.367 "
          id="polygon9" />
       <polygon
-         points="103.583,91.883 107.708,94.188 132.278,77.602 129.286,76.93 "
+         points="129.286,76.93 103.583,91.883 107.708,94.188 132.278,77.602 "
          id="polygon11" />
       <polygon
-         points="107.388,89.016 105.926,93.492 133.293,120.695 140.301,124.32 "
+         points="140.301,124.32 107.388,89.016 105.926,93.492 133.293,120.695 "
          id="polygon13" />
       <polygon
-         points="93.731,100.828 94.099,105.531 140.301,124.32 124.911,116.422 "
+         points="124.911,116.422 93.731,100.828 94.099,105.531 140.301,124.32 "
          id="polygon15" />
       <polygon
-         points="97.981,103.234 92.06,99.867 96.528,116.844 98.918,120.508 "
+         points="98.918,120.508 97.981,103.234 92.06,99.867 96.528,116.844 "
          id="polygon17" />
       <polygon
-         points="63.497,105.688 58.45,102.258 43.786,121.781 44.325,129.383 "
+         points="44.325,129.383 63.497,105.688 58.45,102.258 43.786,121.781 "
          id="polygon19" />
       <polygon
-         points="44.083,101.195 44.06,96.789 7.224,99.125 0.997,102.5 "
+         points="0.997,102.5 44.083,101.195 44.06,96.789 7.224,99.125 "
          id="polygon21" />
       <polygon
-         points="79.192,103.398 76.411,101.539 71.942,113.914 73.426,117.312 "
+         points="73.426,117.312 79.192,103.398 76.411,101.539 71.942,113.914 "
          id="polygon23" />
       <polygon
-         points="59.95,100.75 57.13,102.922 73.426,117.312 70.692,111.992 "
+         points="70.692,111.992 59.95,100.75 57.13,102.922 73.426,117.312 "
          id="polygon25" />
       <polygon
-         points="77.106,102.969 74.051,105.531 98.918,120.508 97.138,116.211 "
+         points="97.138,116.211 77.106,102.969 74.051,105.531 98.918,120.508 "
          id="polygon27" />
       <polygon
-         points="90.458,58.812 95.083,57.891 103.388,26.477 100.872,28.445 "
+         points="100.872,28.445 90.458,58.812 95.083,57.891 103.388,26.477 "
          id="polygon29" />
     </g>
     <text
